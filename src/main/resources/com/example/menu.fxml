@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="paneContainer" maxHeight="206.0" maxWidth="502.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MenuController">
+   <children>
+      <RadioButton fx:id="rdbRed" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" selected="true" text="Red">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+         <toggleGroup>
+            <ToggleGroup fx:id="color" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbYellow" layoutX="112.0" layoutY="27.0" mnemonicParsing="false" text="Yellow" toggleGroup="$color">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </RadioButton>
+      <RadioButton fx:id="rdbBlack" layoutX="210.0" layoutY="27.0" mnemonicParsing="false" text="Black" toggleGroup="$color">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </RadioButton>
+      <RadioButton fx:id="rdbOrange" layoutX="308.0" layoutY="27.0" mnemonicParsing="false" text="Orange" toggleGroup="$color">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </RadioButton>
+      <RadioButton fx:id="rdbGreen" layoutX="406.0" layoutY="27.0" mnemonicParsing="false" text="Green" toggleGroup="$color">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </RadioButton>
+      <Text fx:id="txtProgramming" fill="RED" layoutX="22.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming is fun" wrappingWidth="195.21630859375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="168.0" layoutY="166.0" mnemonicParsing="false" onAction="#moveLeft" prefHeight="26.0" prefWidth="78.0" text="&lt;=" />
+      <Button layoutX="257.0" layoutY="166.0" mnemonicParsing="false" onAction="#moveRight" prefHeight="26.0" prefWidth="78.0" text="=&gt;" />
+   </children>
+</Pane>
